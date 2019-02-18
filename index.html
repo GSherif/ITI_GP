@@ -8,9 +8,171 @@
     <title>ITI_GP</title>
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 
 <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light mt-4">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active dropdown pb-3">
+                    <a class="nav-link text-uppercase" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Home <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu dropdown__content p-3" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="container d-flex flex-row">
+                            <div class="row flex-nowrap">
+                                <div class="col">
+
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">Home – Modern</a>
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">Home – Full Screen</a>
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">Home – Video</a>
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">Home – zoom</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-uppercase" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Destination
+                    </a>
+                    <div class="dropdown-menu dropdown__content p-3" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="container d-flex flex-row">
+                            <div class="row flex-nowrap">
+                                <div class="col">
+
+                                    <a class="dropdown-item px-3 py-2" href="#">World</a>
+                                    <a class="dropdown-item px-3 py-2" href="#">Europe</a>
+                                    <a class="dropdown-item px-3 py-2" href="#">Asia</a>
+                                    <a class="dropdown-item px-3 py-2" href="#">Africa</a>
+                                </div>
+                                <div class="col">
+
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">All world</a>
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">Austalia</a>
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">Canada</a>
+                                </div>
+                                <div class="col">
+
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">New zealand</a>
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">North America</a>
+                                    <a class="dropdown-item font-weight-light px-3 py-2" href="#">Turkey</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-uppercase" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Listings
+                    </a>
+                    <div class="dropdown-menu dropdown__content p-3" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Grid – 3 Column</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Grid – Left Sidebar</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Grid – Right Sidebar</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Grid – Wide View</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Grid – 2 Column</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Grid – 4 Column</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">List View – Default</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">List – Left Sidebar</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">List – Right Sidebar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-uppercase" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Activities
+                    </a>
+                    <div class="dropdown-menu dropdown__content p-3" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="container d-flex flex-row no-gutters">
+                            <div class="row flex-nowrap">
+                                <div class="col-lg-3">
+                                    <img src="images/shutterstock_1.jpg" class="pt-4 w-290" alt="" srcset="">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <p class="p-3 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor…</p>
+                                </div>
+                                <div class="col-lg-3 offset-1">
+                                    <img src="images/cat-shutterstock_2.jpg" class="pt-4 w-290" alt="" srcset="">
+                                    <a class="dropdown-item p-2" href="#">Action</a>
+                                    <p class="p-3 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor…</p>
+                                </div>
+                                <div class="col-lg-3 offset-1">
+                                    <img src="images/cat-shutterstock.jpg" class="pt-4 w-290" alt="" srcset="">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <p class="p-3 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor…</p>
+                                </div>
+                                <!-- <div class="col-lg-3" style="width:25%">
+                                    <img src="images/cat-shutterstock_4.jpg" class="pt-4" alt="" srcset="">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <p class="p-3 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor…</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-uppercase" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bookings
+                    </a>
+                    <div class="dropdown-menu dropdown__content p-3" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Fixed Dates</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Date Picker</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">Affiliate Tour</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#"> Dates and Prices</a>
+                        <a class="dropdown-item font-weight-light px-3 py-2" href="#">WC Bookings Demo</a>
+                    </div> </li> <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu dropdown__content p-3" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item font-weight-light px-3 py-2" href="#">Action</a>
+                            <a class="dropdown-item font-weight-light px-3 py-2" href="#">Another action</a>
+                            <a class="dropdown-item font-weight-light px-3 py-2" href="#">Something else here</a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Blog</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
     <nav class="nav tab-active">
         <a class="nav-link" href="#">Cities</a>
         <a class="nav-link" href="#">Hotels</a>
@@ -19,68 +181,248 @@
         <a class="nav-link active" href="#">Trips</a>
     </nav>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card" style="width: 22rem;">
-                <img src="images/listing-item-02.webp" class="card-img-top" alt="...">
-                <h4>hellooo </h4>
-                <h6>thiiiiiis is my hooootel</h6>
-                <span><i class="far fa-heart"></i></span>
-                <div class="card-body">
-                    <p class="card-text"> 
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <span>(12 reviews)</span>
-                    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" style="width: 22rem;">
+                    <img src="images/listing-item-02.webp" class="card-img-top" alt="...">
+                    <h4>hellooo </h4>
+                    <h6>thiiiiiis is my hooootel</h6>
+                    <span><i class="far fa-heart"></i></span>
+                    <div class="card-body">
+                        <p class="card-text"> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(12 reviews)</span>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-4">
-            <div class="card" style="width: 22rem;">
-                <img src="images/listing-item-04.webp" class="card-img-top" alt="...">
-                <h4>hellooo </h4>
-                <h6>thiiiiiis is my hooootel</h6>
-                <span><i class="far fa-heart"></i></span>
-                <div class="card-body">
-                    <p class="card-text"> 
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <span>(18 reviews)</span>
-                    </p>
+            <div class="col-lg-4">
+                <div class="card" style="width: 22rem;">
+                    <img src="images/listing-item-04.webp" class="card-img-top" alt="...">
+                    <h4>hellooo </h4>
+                    <h6>thiiiiiis is my hooootel</h6>
+                    <span><i class="far fa-heart"></i></span>
+                    <div class="card-body">
+                        <p class="card-text"> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(18 reviews)</span>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-4">
-            <div class="card" style="width: 22rem;">
-                <img src="images/listing-item-03.webp" class="card-img-top" alt="...">
-                <h4>hellooo </h4>
-                <h6>thiiiiiis is my hooootel</h6>
-                <span><i class="far fa-heart"></i></span>
-                <div class="card-body">
-                    <p class="card-text"> 
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <span>(20 reviews)</span>
-                    </p>
+            <div class="col-lg-4">
+                <div class="card" style="width: 22rem;">
+                    <img src="images/listing-item-03.webp" class="card-img-top" alt="...">
+                    <h4>hellooo </h4>
+                    <h6>thiiiiiis is my hooootel</h6>
+                    <span><i class="far fa-heart"></i></span>
+                    <div class="card-body">
+                        <p class="card-text"> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(20 reviews)</span>
+                        </p>
+                    </div>
                 </div>
             </div>
+            
         </div>
-        
     </div>
-</div>
-    <script src="js/script.js"></script>
+    <!-- cards -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card__body">
+                        <a href="#">
+                            <img src="images/25.jpg" alt="" srcset="">
+                            <div class="text">
+                                <h3>Shops</h3>
+                                <span>13 Lisiting</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary round btn-lg font-weight-3">Browse</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card__body">
+                        <a href="#">
+                            <img src="images/25.jpg" alt="" srcset="">
+                            <div class="text">
+                                <h3>Shops</h3>
+                                <span>13 Lisiting</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary round btn-lg font-weight-3">Browse</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card__body">
+                        <a href="#">
+                            <img src="images/25.jpg" alt="" srcset="">
+                            <div class="text">
+                                <h3>Shops</h3>
+                                <span>13 Lisiting</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary round btn-lg font-weight-3">Browse</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end card -->
+
+    <!-- card reviews -->
+    <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-review">
+                        <img src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/img-quote-04-160x160.jpg"
+                            alt="" srcset="">
+                        <h3 class="card-review__heading mt-3">Great Trip</h3>
+                        <p>
+                            This trip was easily the trip of a lifetime for our family of four, and it will be quite some
+                            time before we stop talking about it!
+                        </p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <div class="card-review__footer mt-3 p-3">
+                            <h5 class="heading">Josh Aniston</h5>
+                            <h6 class="subheading">Travelled to Rome</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-review">
+                        <img src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/img-quote-04-160x160.jpg"
+                            alt="" srcset="">
+                        <h3 class="card-review__heading mt-3">Great Trip</h3>
+                        <p>
+                            This trip was easily the trip of a lifetime for our family of four, and it will be quite some
+                            time before we stop talking about it!
+                        </p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <div class="card-review__footer mt-3 p-3">
+                            <h5 class="heading">Josh Aniston</h5>
+                            <h6 class="subheading">Travelled to Rome</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-review">
+                        <img src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/img-quote-04-160x160.jpg"
+                            alt="" srcset="">
+                        <h3 class="card-review__heading mt-3">Great Trip</h3>
+                        <p>
+                            This trip was easily the trip of a lifetime for our family of four, and it will be quite some
+                            time before we stop talking about it!
+                        </p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <div class="card-review__footer mt-3 p-3">
+                            <h5 class="heading">Josh Aniston</h5>
+                            <h6 class="subheading">Travelled to Rome</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- end card reviews -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <!-- <h5 class="footer__heading"></h5> -->
+                    <p>
+                        <img src="images/logo.png">
+                    </p>
+                    <p class="footer__text">
+                        Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea. Id placerat tacimates
+                        definitionem
+                        sea, prima quidam vim no. Duo nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus
+                        expetendis vis.
+                    </p>
+                    <div class="row mt-5 mb-5">
+                        <h5 class="footer__heading ml-3 uppercase">follow us</h5>
+                        <ul class="list pl-1">
+                            <li class="list__item follow-us ml-3"><a href="" class="link"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li class="list__item follow-us ml-3"><a href="" class="link"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="list__item follow-us ml-3"><a href="" class="link"><i
+                                        class="fab fa-google-plus-g"></i></a></li>
+                            <li class="list__item follow-us ml-3"><a href="" class="link"><i
+                                        class="fab fa-pinterest-p"></i></a></li>
+                            <li class="list__item follow-us ml-3"><a href="" class="link"><i
+                                        class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer__heading">Useful links</h5>
+                    <ul class="list pl-0">
+                        <li class="list__item"><a href="" class="link link--moved">About</a></li>
+                        <li class="list__item"><a href="" class="link link--moved">login</a></li>
+                        <li class="list__item"><a href="" class="link link--moved">Register</a></li>
+                        <li class="list__item"><a href="" class="link link--moved">News & Events</a></li>
+                        <li class="list__item"><a href="" class="link link--moved">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer__heading">Contact with Us</h5>
+                    <ul class="list pl-0">
+                        <li class="list__item"><a href="" class="link"><i class="fas fa-mobile-alt"></i>
+                                &nbsp;&nbsp;&nbsp;+ 61 23 8093 3400</a></li>
+                        <li class="list__item"><a href="" class="link"><i
+                                    class="far fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@Panagea.com</a></li>
+                    </ul>
+                    <div class="form-group">
+                        <label class="footer__heading mb-2">Newsletter</label>
+                        <!-- <input type="email" class="round form-control" placeholder="Enter your Email">
+                        <input type="button" class="btn btn-primary round ml-5" id="exampleInputPassword1" value="submit"> -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your Email"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">Sumbit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+>>>>>>> cf064d29801d3e1c141e81eee8f41f88428b31c4
 </body>
 
 </html>

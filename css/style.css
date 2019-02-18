@@ -1,3 +1,105 @@
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.min.css);
+a {
+  text-decoration: none !important;
+  cursor: pointer; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.round {
+  border-radius: 30px !important; }
+
+.round-right {
+  border-radius: 0 30px 30px 0px !important; }
+
+.w-290 {
+  width: 290px; }
+
+.card-review {
+  text-align: center; }
+  .card-review__heading {
+    font-weight: 700; }
+  .card-review img {
+    max-width: none;
+    width: 50%;
+    height: auto;
+    border-radius: 50%; }
+  .card-review__footer {
+    border-top: 1px solid rgba(24, 24, 24, 0.1); }
+
+.card {
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s ease-out 0s;
+  margin: 0 15px 30px;
+  border-radius: 4px; }
+  .card:hover img {
+    transition: 0.3s ease-in-out 0s;
+    transform: scale(1.1); }
+  .card__body {
+    position: relative;
+    margin-bottom: -20px; }
+    .card__body::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      background: -webkit-linear-gradient(bottom, rgba(35, 35, 37, 0.85) 0%, rgba(35, 35, 37, 0.4) 35%, rgba(22, 22, 23, 0) 60%, rgba(0, 0, 0, 0) 100%);
+      background: -o-linear-gradient(bottom, rgba(35, 35, 37, 0.85) 0%, rgba(35, 35, 37, 0.4) 35%, rgba(22, 22, 23, 0) 60%, rgba(0, 0, 0, 0) 100%);
+      background: linear-gradient(to top, rgba(35, 35, 37, 0.85) 0%, rgba(35, 35, 37, 0.4) 35%, rgba(22, 22, 23, 0) 60%, rgba(0, 0, 0, 0) 100%); }
+    .card__body img {
+      width: 100%;
+      text-align: center; }
+    .card__body .text {
+      position: absolute;
+      top: 45%;
+      left: 34px;
+      z-index: 9; }
+      .card__body .text h3 {
+        color: white;
+        padding: 5px 0; }
+      .card__body .text span {
+        color: gray; }
+    .card__body .btn {
+      position: absolute;
+      top: 70%;
+      left: 34px;
+      z-index: 9; }
+
+.link {
+  color: #ffffff;
+  transition: 0.3s;
+  opacity: 0.7; }
+  .link:hover {
+    color: red; }
+  .link--moved:hover {
+    margin-left: 5px; }
+
+.list__item {
+  list-style-type: none; }
+
+.footer {
+  background-color: #121921;
+  padding: 60px 35px 60px 35px; }
+  .footer__heading {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    font-weight: 500; }
+  .footer__text {
+    color: #ffffff;
+    opacity: 0.7; }
+  .footer .follow-us {
+    display: block;
+    float: left; }
+
+.dropdown__content {
+  display: none; }
+
+.dropdown:hover .dropdown__content {
+  display: block; }
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
