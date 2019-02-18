@@ -67,6 +67,39 @@ a {
       left: 34px;
       z-index: 9; }
 
+.card {
+  position: relative; }
+  .card .card-text i.fas {
+    color: yellow; }
+  .card .card-text span {
+    color: grey; }
+  .card:hover {
+    margin-top: -0.5rem;
+    transition: all 0.3s ease-in-out 0s; }
+  .card h4 {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    color: white; }
+  .card h6 {
+    position: absolute;
+    top: 66%;
+    left: 5%;
+    color: gray; }
+  .card i.far {
+    position: absolute;
+    top: 65%;
+    right: 15%;
+    color: white;
+    font-size: 20px; }
+
+.tab-active a {
+  color: black; }
+
+.tab-active a:focus {
+  color: #0056b3;
+  background-color: lightgray; }
+
 .link {
   color: #ffffff;
   transition: 0.3s;
