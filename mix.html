@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ITI_GP</title>
+    <title>Mix</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -21,12 +21,93 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <!--tabs-->
+    <div class="container-fluid">
+        <nav class="nav tab-active justify-content-center">
+            <a class="nav-link" href="#">Cities</a>
+            <a class="nav-link" href="#">Hotels</a>
+            <a class="nav-link" href="#">Restaraunts</a>
+            <a class="nav-link" href="#">Activities</a>
+            <a class="nav-link active" href="#">Trips</a>
+        </nav>
+    </div>
+
+    <!--Hotels-->
+    <div class="container py-5">
+        <div class="row justify-content-center my-3">
+            <h1 class="text-capitalize">amazing hotels</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" style="width: 22rem;">
+                    <img src="images/hotel-1-serenity-makadi-heights.jpg" class="card-img-top" alt="...">
+                    <h4>Serenity Makadi Beach</h4>
+                    <h6>Egypt</h6>
+                    <span><i class="far fa-heart"></i></span>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(12 reviews)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" style="width: 22rem;">
+                    <img src="images/hotel-2-tui-sensimar-makadi-hotel.jpg" class="card-img-top" alt="...">
+                    <h4>TUI SENSIMAR Makadi Hotel </h4>
+                    <h6>Egypt</h6>
+                    <span><i class="far fa-heart"></i></span>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(18 reviews)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" style="width: 22rem;">
+                    <img src="images/hotel-3-hilton.jpg" class="card-img-top" alt="...">
+                    <h4>Hilton Luxor Resort & Spa</h4>
+                    <h6>Egypt</h6>
+                    <span><i class="far fa-heart"></i></span>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(20 reviews)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- card reviews -->
+    <div class="container my-5">
+        <div class="row justify-content-center my-3">
+            <h1 class="text-capitalize">reviews</h1>
+        </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="card-review">
-                    <img src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/img-quote-04-160x160.jpg"
-                        alt="" srcset="">
+                    <img src="images/people-01-300x300.jpg" alt="" srcset="">
                     <h3 class="card-review__heading mt-3">Great Trip</h3>
                     <p>
                         This trip was easily the trip of a lifetime for our family of four, and it will be quite some
@@ -45,8 +126,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card-review">
-                    <img src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/img-quote-04-160x160.jpg"
-                        alt="" srcset="">
+                    <img src="images/people-02-300x300.jpg" alt="" srcset="">
                     <h3 class="card-review__heading mt-3">Great Trip</h3>
                     <p>
                         This trip was easily the trip of a lifetime for our family of four, and it will be quite some
@@ -65,8 +145,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card-review">
-                    <img src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/img-quote-04-160x160.jpg"
-                        alt="" srcset="">
+                    <img src="images/people-03-300x300.jpg" alt="" srcset="">
                     <h3 class="card-review__heading mt-3">Great Trip</h3>
                     <p>
                         This trip was easily the trip of a lifetime for our family of four, and it will be quite some
@@ -85,6 +164,6 @@
             </div>
         </div>
     </div>
+    
 </body>
-
 </html>
