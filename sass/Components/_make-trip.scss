@@ -1,10 +1,11 @@
 .make-trip {
     padding-left: 0; // padding-right: 0;
+    margin-top: 2rem;
     &__line-separator {
         border-bottom: 0.1rem solid $light-grey-dgree;
     }
     &__form-block {
-        margin-top: 3rem;
+        margin-top: 5rem;
         margin-left: 2rem;
     }
     &__input-lable {
@@ -18,7 +19,7 @@
         margin-left: 1rem;
     }
     &__dropdown-lable {
-        margin-right: 1rem;
+        margin-left: 7rem;
     }
     &__btn-dropdwon {
         outline: none;
@@ -28,9 +29,11 @@
     }
     &__calender-lable {
         margin-top: 0.4rem;
+        margin-left: 2rem;
     }
     &__category-container {
-        margin-top: 2rem;
+        margin-top: 3rem;
+        padding-bottom: 9.5rem;
     }
     &__category-header {
         font-family: $primary-font;

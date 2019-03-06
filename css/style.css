@@ -5,9 +5,7 @@
 
 body {
   font-size: 1.6rem;
-  font-family: Lato,sans-serif;
-  color: white !important;
-  background-color: #1c1d29 !important; }
+  font-family: Lato,sans-serif; }
 
 a {
   text-decoration: none !important;
@@ -30,6 +28,10 @@ li {
 
 .card-overlay {
   margin-top: 1.5rem; }
+  .card-overlay__container {
+    background: #F2F2F2;
+    margin-top: -1.5rem;
+    padding-bottom: 5rem; }
   .card-overlay__image-col {
     padding-left: 0rem;
     position: relative;
@@ -42,6 +44,12 @@ li {
       top: 0; }
   .card-overlay__overlay-container {
     position: relative; }
+  .card-overlay__header {
+    color: #1c1d29;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-family: "Cookie", cursive;
+    font-size: 3rem; }
   .card-overlay__image-card {
     width: 100%;
     height: 15rem; }
@@ -82,6 +90,45 @@ li {
     border-radius: 50%; }
   .card-review__footer {
     border-top: 1px solid rgba(24, 24, 24, 0.1); }
+
+.card-with-img-and-desc {
+  text-align: center;
+  margin-top: 4rem; }
+  .card-with-img-and-desc__title {
+    font-weight: 200;
+    font-size: 3rem;
+    line-height: 1.333;
+    font-family: "Cookie", cursive;
+    color: #1c1d29; }
+  .card-with-img-and-desc--card {
+    border: transparent;
+    margin-top: 3.5rem; }
+  .card-with-img-and-desc--card-title {
+    font-size: 1.8rem;
+    color: #58626c;
+    font-family: "Cookie", cursive; }
+  .card-with-img-and-desc--card-text {
+    margin-top: -2rem;
+    color: #58626c; }
+  .card-with-img-and-desc--imagehover {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto; }
+    .card-with-img-and-desc--imagehover:hover .card-with-img-and-desc--overlay {
+      opacity: 0.7; }
+  .card-with-img-and-desc--overlay {
+    position: absolute;
+    background: #1c1d29;
+    text-align: center;
+    padding: 45px 0 66px 0;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.25s ease; }
 
 .card-zoom {
   width: 100%;
@@ -162,11 +209,12 @@ li {
   list-style-type: none; }
 
 .make-trip {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-top: 2rem; }
   .make-trip__line-separator {
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2); }
   .make-trip__form-block {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-left: 2rem; }
   .make-trip__input-lable {
     margin-left: 7rem; }
@@ -177,16 +225,18 @@ li {
     padding: 0.4rem 1rem;
     margin-left: 1rem; }
   .make-trip__dropdown-lable {
-    margin-right: 1rem; }
+    margin-left: 7rem; }
   .make-trip__btn-dropdwon {
     outline: none;
     background: white;
     width: 11rem;
     color: grey; }
   .make-trip__calender-lable {
-    margin-top: 0.4rem; }
+    margin-top: 0.4rem;
+    margin-left: 2rem; }
   .make-trip__category-container {
-    margin-top: 2rem; }
+    margin-top: 3rem;
+    padding-bottom: 9.5rem; }
   .make-trip__category-header {
     font-family: "Cookie", cursive; }
   .make-trip__category-block {

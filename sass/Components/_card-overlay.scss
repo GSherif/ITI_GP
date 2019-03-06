@@ -1,5 +1,10 @@
 .card-overlay {
     margin-top: 1.5rem;
+    &__container {
+        background: $white-degree;
+        margin-top: -1.5rem;
+        padding-bottom: 5rem;
+    }
     &__image-col {
         padding-left: 0rem;
         position: relative;
@@ -7,7 +12,6 @@
         overflow: hidden;
         max-width: 100%;
         height: 100%;
-       
         &:hover .card-overlay__overlay {
             opacity: 1;
             top: 0
@@ -15,6 +19,13 @@
     }
     &__overlay-container {
         position: relative;
+    }
+    &__header {
+        color: $primary-color;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        font-family: $primary-font;
+        font-size: 3rem;
     }
     &__image-card {
         width: 100%;
@@ -25,7 +36,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color:$white-color;
+        color: $white-color;
         font-weight: 900;
         font-size: 1.5rem;
     }
