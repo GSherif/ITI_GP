@@ -1,0 +1,88 @@
+.make-trip {
+    padding-left: 0; // padding-right: 0;
+    margin-top: 2rem;
+    &__line-separator {
+        border-bottom: 0.1rem solid $light-grey-dgree;
+    }
+    &__form-block {
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+    &__input-lable {
+        margin-left: 7rem;
+    }
+    &__form-input {
+        border: none;
+        outline: none;
+        border-radius: 0.3rem;
+        padding: 0.4rem 1rem;
+        margin-left: 1rem;
+    }
+    &__dropdown-lable {
+        margin-left: 7rem;
+    }
+    &__btn-dropdwon {
+        outline: none;
+        background: $white-color;
+        width: 11rem;
+        color: $grey-color;
+    }
+    &__calender-lable {
+        margin-top: 0.4rem;
+        margin-left: 2rem;
+    }
+    &__category-container {
+        margin-top: 3rem;
+        padding-bottom: 9.5rem;
+    }
+    &__category-header {
+        font-family: $primary-font;
+    }
+    &__category-block {
+        border: 0.1rem dashed $light-grey-dgree;
+        border-radius: 0.2rem;
+        width: 10rem;
+        height: 10rem;
+        background: none;
+        margin-top: 1rem;
+        &:hover {
+            background-color: $primary-light-color;
+            border-color: transparent;
+            .make-trip__category-inner-circle-text {
+                color: $light-blue;
+            }
+        }
+    }
+    &__category-inner-circle {
+        border-radius: 5rem;
+        height: 5rem;
+        width: 5rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    &__category-inner-circle-text {
+        text-align: center;
+        font-family: $primary-font;
+        margin-top: 0.6rem;
+    }
+    &--green-inner-circle {
+        background: $green-color;
+    }
+    &--blue-inner-circle {
+        background: $blue-color;
+    }
+    &--purble-inner-circle {
+        background: $purble-color;
+    }
+    &--orange-inner-circle {
+        background: $orange-color;
+    }
+    &--dark-purble-inner-circle {
+        background: $dark-purple;
+    }
+    &__category-inner-circle-icon {
+        margin-top: 2rem;
+        color: $white-color;
+    }
+}
