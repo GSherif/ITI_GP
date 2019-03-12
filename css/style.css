@@ -298,6 +298,17 @@ li {
     display: block;
     float: left; }
 
+.country-slider {
+  overflow: hidden; }
+  @media screen and (min-width: 767.98px) {
+    .country-slider {
+      max-height: 381px; } }
+  .country-slider__heading {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    color: white; }
+
 .dropdown__content {
   display: none; }
 
