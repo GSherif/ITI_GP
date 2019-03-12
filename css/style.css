@@ -112,6 +112,10 @@ a {
 .list__item {
   list-style-type: none; }
 
+.page-title-background {
+  width: 100%;
+  height: 190px; }
+
 .footer {
   background-color: #121921;
   padding: 60px 35px 60px 35px; }
