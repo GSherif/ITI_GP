@@ -1,14 +1,22 @@
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import 'abstract/variables';
+@import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
 // @import 'components/buttons';
+@import 'Components/card-overlay';
 @import 'components/card-reviews';
+@import 'Components/card-with-description';
 @import 'components/card-zoom';
-@import 'components/hotelsCrad';
-@import 'components/tabs';
+@import 'components/hotelsCard';
 @import 'components/link';
 @import 'components/list';
 @import 'components/page-title-cover';
-
 @import 'layout/footer';
+@import 'pages/country-slider';
+@import 'Components/make-trip';
+@import 'components/tabs';
 @import 'vendors/custom';
+
+  
+  
