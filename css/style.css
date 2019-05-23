@@ -170,6 +170,91 @@ li {
       left: 34px;
       z-index: 9; }
 
+.img--height {
+  height: 8rem;
+  width: 50% !important; }
+
+.slider-img {
+  height: 24rem;
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.Gallery {
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: antiquewhite; }
+
+.col-1 {
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.col-8 {
+  padding-left: 0px !important; }
+
+.card-overlay__header {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important; }
+
+.txt {
+  margin-bottom: 0rem; }
+
+.contain {
+  width: 82% !important;
+  align-self: flex-end !important; }
+
+.row {
+  margin-right: 0px !important; }
+
+.facilitiesSection {
+  background-color: #072634; }
+  .facilitiesSection .cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px; }
+    .facilitiesSection .cards .facilities {
+      height: 230px;
+      width: 200px;
+      border-color: #C9BC89;
+      background-color: #072634;
+      justify-content: center; }
+      .facilitiesSection .cards .facilities .innerCard {
+        position: relative;
+        margin: auto;
+        border-radius: 25%;
+        height: 130px;
+        width: 130px;
+        background-color: #072634;
+        border: solid 2px #C9BC89;
+        transform: rotate(45deg); }
+        .facilitiesSection .cards .facilities .innerCard .fa-swimming-pool {
+          color: #C9BC89;
+          position: absolute;
+          top: 50px;
+          left: 50px; }
+      .facilitiesSection .cards .facilities .fac-word {
+        color: #C9BC89; }
+
+.reasons-section {
+  background-color: #F2F6FC;
+  height: 200px;
+  margin: 40px; }
+  .reasons-section .rows {
+    margin: 35px; }
+    .reasons-section .rows .col-6 {
+      display: flex; }
+      .reasons-section .rows .col-6 .circle--blue {
+        background-color: #ACC6D4; }
+      .reasons-section .rows .col-6 .circle--red {
+        background-color: #A74141; }
+      .reasons-section .rows .col-6 .circle--yellow {
+        background-color: #705775; }
+      .reasons-section .rows .col-6 .circle--green {
+        background-color: white; }
+      .reasons-section .rows .col-6 .circle {
+        border-radius: 100%;
+        height: 30px;
+        width: 30px; }
+
 .card {
   position: relative; }
   .card .card-text i.fas {
@@ -207,6 +292,20 @@ li {
 
 .list__item {
   list-style-type: none; }
+
+.checked {
+  color: orange; }
+
+.country-slider {
+  overflow: hidden; }
+  @media screen and (min-width: 767.98px) {
+    .country-slider {
+      max-height: 381px; } }
+  .country-slider__heading {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    color: white; }
 
 .make-trip {
   padding-left: 0;
@@ -297,17 +396,6 @@ li {
   .footer .follow-us {
     display: block;
     float: left; }
-
-.country-slider {
-  overflow: hidden; }
-  @media screen and (min-width: 767.98px) {
-    .country-slider {
-      max-height: 381px; } }
-  .country-slider__heading {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    color: white; }
 
 .dropdown__content {
   display: none; }
