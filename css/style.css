@@ -397,6 +397,10 @@ li {
     display: block;
     float: left; }
 
+.page-title-background {
+  width: 100%;
+  height: 190px; }
+
 .dropdown__content {
   display: none; }
 
