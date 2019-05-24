@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trip</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7cCookie">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background:#565EB5">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" style="margin-top: 0.9rem;">
+                <div> Logooo</div>
+            </div>
+            <div class="col-8">
+                <nav class="navbar navbar-expand-lg navbar-light " style="margin-left: 15rem;">
+                    <a class="navbar-brand" href="#" style="color:white">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="color:white">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color:white">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color:white">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" style="color:white" tabindex="-1"
+                                    aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-2" style="margin-top: 0.9rem;">
+                <div>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!--header section-->
+        <div class="row manage-trip__headers-row">
+            <div class="col-2 manage-trip">
+                <h4 class="manage-trip__text-header">Days</h4>
+            </div>
+            <div class="col-8 manage-trip">
+                <h4 class="manage-trip__text-header">Manage Your Trip</h4>
+            </div>
+            <div class="col-2 manage-trip">
+                <h4 class="manage-trip__text-header">Order Your Day</h4>
+            </div>
+
+        </div>
+        <div class="row">
+            <!--days section-->
+            <div class="col-2 manage-trip manage-trip__days-section">
+
+            </div>
+            <!--manage trip section-->
+            <div class="col-8 manage-trip manage-trip__details-section">
+                <div>
+                    <!--dropdown-->
+                    <div class="row manage-trip__dropdown">
+                        <div class="col-1 manage-trip__dropdown-lable">
+                            <label class="manage-trip__dropdown-text">Country</label>
+                        </div>
+                        <div class="col-3">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle manage-trip__btn-dropdwon" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Country name
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Egypt</a>
+                                    <a class="dropdown-item" href="#">Greece</a>
+                                    <a class="dropdown-item" href="#">India</a>
+                                    <a class="dropdown-item" href="#">Lebanon</a>
+
+                                </div>
+                                <a class="action-btn  manage-trip__btn-plus-color" href="#">
+                                    <i class="fas fa-plus manage-trip--icons-and-text"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-1 manage-trip__dropdown-lable">
+                            <label class="manage-trip__dropdown-text">City</label>
+                        </div>
+                        <div class="col-3">
+                            <!-- <label for="staticEmail" class=" col-form-label">City</label> -->
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle manage-trip__btn-dropdwon" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    City name
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Egypt</a>
+                                    <a class="dropdown-item" href="#">Greece</a>
+                                    <a class="dropdown-item" href="#">India</a>
+                                    <a class="dropdown-item" href="#">Lebanon</a>
+
+                                </div>
+                                <a class="action-btn  manage-trip--btn-plus-color" href="#">
+                                    <i class="fas fa-plus manage-trip--icons-and-text"></i>
+                                </a>
+                            </div>
+                            <!-- <a class="action-btn" href="#">
+                                                <i class="fas fa-plus"></i>
+                                            </a> -->
+                            <!-- <a class="action-btn" href="#">
+                                            <i class="fas fa-plus"></i>
+                                        </a> -->
+
+                        </div>
+                    </div>
+                    <!--tabs icons-->
+                    <div class="row">
+                        <div class="col-2">
+                            <h7 class="manage-trip--icons-and-text">Hotels</h7>
+                            <i class="fas fa-hotel manage-trip--icons-and-text"></i>
+                        </div>
+                        <div class="col-3">
+                            <h7 class="manage-trip--icons-and-text">Resturants</h7>
+                            <i class="fas fa-utensils manage-trip--icons-and-text"></i>
+                        </div>
+                        <div class="col-3">
+                            <h7 class="manage-trip--icons-and-text">Destinations</h7>
+                            <i class="fas fa-map-marker-alt manage-trip--icons-and-text"></i>
+                        </div>
+                        <div class="col-2">
+                            <h7 class="manage-trip--icons-and-text">Activities</h7>
+                            <i class="fas fa-snowboarding manage-trip--icons-and-text"></i>
+                        </div>
+                        <div class="col-2">
+                            <h7 class="manage-trip--icons-and-text">Transportations</h7>
+                            <i class="fas fa-bus-alt manage-trip--icons-and-text"></i>
+                        </div>
+
+                    </div>
+                    <!--tab content-->
+                    <div class="row manage-trip__category-content">
+                        <!-- <i class="fas fa-plus"></i> -->
+                        <div class="col-4 card-overlay__image-col">
+                            <div class="card-overlay__overlay-container">
+                                <a href="#">
+                                    <div class="card-overlay__centered">Tiwan</div>
+                                    <img class="card-overlay__image-card"
+                                        src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/05/post_01-1280x1280.jpg">
+
+                                    <div class="card-overlay__overlay">
+                                        <h5 class="card-overlay__overlay-text-header">Taiwan</h5>
+                                        <p class="card-overlay__overlay-text">Taiwan, 180km east of China, is known
+                                            for
+                                            modern
+                                            cities,
+                                            traditional Chinese temples, hot springs resorts and dramatic
+                                            mountainous
+                                            terrain.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 card-overlay__image-col">
+                            <div class="card-overlay__overlay-container">
+                                <a href="#">
+                                    <div class="card-overlay__centered">Tiwan</div>
+                                    <img class="card-overlay__image-card"
+                                        src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/07/post_05-1280x640.jpg">
+                                    <div class="card-overlay__overlay">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 card-overlay__image-col">
+                            <div class="card-overlay__overlay-container">
+                                <a href="#">
+                                    <div class="card-overlay__centered">Tiwan</div>
+                                    <img class="card-overlay__image-card"
+                                        src="http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/05/post_01-1280x1280.jpg">
+
+                                    <div class="card-overlay__overlay">
+                                        <h5 class="card-overlay__overlay-text-header">Taiwan</h5>
+                                        <p class="card-overlay__overlay-text">Taiwan, 180km east of China, is known
+                                            for
+                                            modern
+                                            cities,
+                                            traditional Chinese temples, hot springs resorts and dramatic
+                                            mountainous
+                                            terrain.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--pagination-->
+                    <div class="row">
+                        <div class="col-12 ">
+                            <nav aria-label="Page navigation example" class="paging">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link paging__page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link paging__page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link paging__page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link paging__page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link paging__page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--order section-->
+            <div class="col-2 manage-trip manage-trip__order-day-section">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
