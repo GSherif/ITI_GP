@@ -119,7 +119,7 @@
 }
 .review{
     margin: 20px;
-    height: 260px;
+    height: 275px;
     overflow: scroll;
 }
 .cont{
@@ -168,6 +168,9 @@
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
+}
+p{
+    color: black;
 }
 
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
