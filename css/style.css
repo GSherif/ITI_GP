@@ -6,7 +6,8 @@
 
 body {
   font-size: 1.6rem;
-  font-family: Lato,sans-serif; }
+  font-family: Lato,sans-serif;
+  color: white !important; }
 
 a {
   text-decoration: none !important;
@@ -44,7 +45,9 @@ li {
       opacity: 1;
       top: 0; }
   .card-overlay__overlay-container {
-    position: relative; }
+    position: relative;
+    font-family: cursive;
+    font-size: 22px; }
   .card-overlay__header {
     color: #1c1d29;
     margin-top: 5rem;
@@ -106,11 +109,11 @@ li {
     margin-top: 3.5rem; }
   .card-with-img-and-desc--card-title {
     font-size: 1.8rem;
-    color: #58626c;
+    color: #7b7b7b;
     font-family: "Cookie", cursive; }
   .card-with-img-and-desc--card-text {
     margin-top: -2rem;
-    color: #58626c; }
+    color: #7b7b7b; }
   .card-with-img-and-desc--imagehover {
     position: relative;
     display: inline-block;
@@ -355,8 +358,48 @@ li {
 .list__item {
   list-style-type: none; }
 
-.checked {
-  color: orange; }
+.page-title-background {
+  width: 100%;
+  height: 190px; }
+
+.tag-item {
+  background-color: #333;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 18px; }
+
+.trip-card {
+  padding: 30px 30px 25px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: solid 1px #f0eded;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+  .trip-card::before {
+    content: "";
+    background-color: lightgrey;
+    width: 2px;
+    height: 50px;
+    margin-top: -50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1; }
+  .trip-card__time {
+    float: left; }
+  .trip-card__details img {
+    float: left;
+    margin-right: 10px; }
+  .trip-card__details .rating i.fas {
+    color: #ffc000; }
+  .trip-card__details .tag {
+    color: lightgrey; }
+  .trip-card__details .details-text {
+    color: #7b7b7b; }
 
 .country-slider {
   overflow: hidden; }
@@ -369,73 +412,51 @@ li {
     bottom: 0;
     color: white; }
 
-.make-trip {
-  padding-left: 0;
-  margin-top: 2rem; }
-  .make-trip__line-separator {
-    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2); }
-  .make-trip__form-block {
-    margin-top: 5rem;
-    margin-left: 2rem; }
-  .make-trip__input-lable {
-    margin-left: 7rem; }
-  .make-trip__form-input {
-    border: none;
-    outline: none;
-    border-radius: 0.3rem;
-    padding: 0.4rem 1rem;
-    margin-left: 1rem; }
-  .make-trip__dropdown-lable {
-    margin-left: 7rem; }
-  .make-trip__btn-dropdwon {
-    outline: none;
-    background: white;
-    width: 11rem;
-    color: grey; }
-  .make-trip__calender-lable {
-    margin-top: 0.4rem;
-    margin-left: 2rem; }
-  .make-trip__category-container {
-    margin-top: 3rem;
-    padding-bottom: 9.5rem; }
-  .make-trip__category-header {
-    font-family: "Cookie", cursive; }
-  .make-trip__category-block {
-    border: 0.1rem dashed rgba(255, 255, 255, 0.2);
-    border-radius: 0.2rem;
-    width: 10rem;
-    height: 10rem;
-    background: none;
-    margin-top: 1rem; }
-    .make-trip__category-block:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-color: transparent; }
-      .make-trip__category-block:hover .make-trip__category-inner-circle-text {
-        color: #4284fc; }
-  .make-trip__category-inner-circle {
-    border-radius: 5rem;
-    height: 5rem;
-    width: 5rem;
-    margin: 0 auto;
-    margin-top: 2rem;
+.manage-trip {
+  text-align: center; }
+  .manage-trip__headers-row {
+    border-bottom: 0.001rem solid #b8b7b8;
+    margin-bottom: 1.9rem; }
+  .manage-trip__days-section {
+    border-right: 0.001rem solid #b8b7b8; }
+  .manage-trip__btn-day {
+    display: block !important;
+    color: #fff !important;
+    background-color: #515691 !important;
+    border-color: #515691 !important;
+    margin-top: 0.5rem;
+    margin-left: 4.6rem; }
+  .manage-trip__details-section {
     text-align: center; }
-  .make-trip__category-inner-circle-text {
-    text-align: center;
+  .manage-trip__dropdown {
+    justify-content: center; }
+  .manage-trip__dropdown-text {
+    margin-top: 0.4rem;
+    font-family: "lato", sans-serif;
+    color: #F4EEF5; }
+  .manage-trip__btn-dropdwon {
+    outline: none;
+    background: white !important;
+    color: grey; }
+  .manage-trip--icons-and-text {
+    color: #ECDBDB;
+    font-family: "lato", sans-serif; }
+  .manage-trip__text-header {
+    color: #F4EEF5;
     font-family: "Cookie", cursive;
-    margin-top: 0.6rem; }
-  .make-trip--green-inner-circle {
-    background: #03C24F; }
-  .make-trip--blue-inner-circle {
-    background: #01AEFF; }
-  .make-trip--purble-inner-circle {
-    background: #9020AC; }
-  .make-trip--orange-inner-circle {
-    background: #FF5126; }
-  .make-trip--dark-purble-inner-circle {
-    background: #870F4E; }
-  .make-trip__category-inner-circle-icon {
-    margin-top: 2rem;
-    color: white; }
+    font-size: 2rem;
+    font-weight: 600; }
+  .manage-trip__order-day-section {
+    border-left: 0.001rem solid #b8b7b8; }
+  .manage-trip__order-day {
+    margin-left: 0rem; }
+
+.paging {
+  display: flex;
+  justify-content: center !important;
+  margin-top: 0.7rem; }
+  .paging__page-link {
+    color: #565EB5 !important; }
 
 .tab-active a {
   color: black; }
@@ -458,10 +479,6 @@ li {
   .footer .follow-us {
     display: block;
     float: left; }
-
-.page-title-background {
-  width: 100%;
-  height: 190px; }
 
 .dropdown__content {
   display: none; }
@@ -7493,3 +7510,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .card-img-top {
   position: relative; }
+
+.checked {
+  color: orange; }
+
+.page-title-background {
+  width: 100%;
+  height: 190px; }
