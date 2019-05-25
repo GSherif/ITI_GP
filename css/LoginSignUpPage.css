@@ -128,6 +128,18 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.wrap-input100Signup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 .label-input100 {
     font-family: Montserrat-Regular;
     font-size: 18px;
@@ -141,6 +153,22 @@ button:hover {
     padding-left: 24px;
     left: 0;
     top: 30px;
+    transition: all 0.4s;
+}
+
+.label-input100SignUp {
+
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    padding-left: 24px;
+    left: 0;
+    top: 19px;
     transition: all 0.4s;
 }
 
