@@ -190,7 +190,6 @@ li {
     width: 100%;
     overflow: hidden;
     transition: 0.3s ease-out 0s;
-    margin: 0 15px 30px;
     border-radius: 4px;
 }
 
@@ -568,6 +567,23 @@ p {
 }
 
 .country-slider__heading {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    color: white;
+}
+
+.home-slider {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 767.98px) {
+    .home-slider {
+        max-height: 560px;
+    }
+}
+
+.home-slider__heading {
     position: absolute;
     z-index: 1;
     bottom: 0;
