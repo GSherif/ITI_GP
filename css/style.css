@@ -11290,13 +11290,29 @@ a.text-dark:focus {
 
 .searchButton {
     background-color: #4CAF50;
+    position: relative;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 7px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 25px 117px;
     cursor: pointer;
+}
+
+.SearchTextBox {
+    margin-top: 20px;
+    align-content: center;
+    width: 250px;
+    margin-left: 37px;
+}
+
+.manage-trip--icons-and-text {
+    color: black
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6;
 }
