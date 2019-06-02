@@ -371,14 +371,18 @@ li {
   .manage-trip__dropdown-text {
     margin-top: 0.4rem;
     font-family: "lato", sans-serif;
-    color: #F4EEF5; }
+    color: #F4EEF5;
+    margin-left: 0.4rem;
+    margin-bottom: 1.4rem; }
   .manage-trip__btn-dropdwon {
     outline: none;
     background: white !important;
     color: grey; }
-  .manage-trip--icons-and-text {
+  .manage-trip--text {
     color: #ECDBDB;
     font-family: "lato", sans-serif; }
+  .manage-trip--icons {
+    color: #ECDBDB; }
   .manage-trip__text-header {
     color: #F4EEF5;
     font-family: "Cookie", cursive;
@@ -388,6 +392,11 @@ li {
     border-left: 0.001rem solid #b8b7b8; }
   .manage-trip__order-day {
     margin-left: 0rem; }
+  .manage-trip__tools {
+    display: flex; }
+  .manage-trip--plus-icon {
+    margin-top: 0.7rem;
+    margin-left: 0.7rem; }
 
 .paging {
   display: flex;
