@@ -1,25 +1,27 @@
-.img--height{
-    height: 8rem;
-    width: 50% !important
-}
-// .hover:hover{
-//     background-color: black;
-//     opacity: 20% !important;
-// }
 .slider-img{
     height: 24rem;
     padding-right: 0px !important; 
     padding-left: 0px !important;
 }
-.Gallery{
-    display: flex !important;
-    flex-direction: column !important;
-    background-color: antiquewhite;
-    // padding-left: 16rem;
+.Address{
+    width: 737px;
+    position: absolute;
+    right: 320px;
+    top: 102%;
+    
 }
+.margin{
+    margin-bottom: 90px;
+}
+.span{margin:1px 3px;}
+.slider-justify{
+justify-content: center;
+}
+
 .col-1{
-    padding-right: 0px !important; 
+    margin-top: 10px !important; 
     padding-left: 0px !important; 
+
 }
 .col-8{
          padding-left: 0px !important;
@@ -31,10 +33,7 @@
 .txt{
     margin-bottom: 0rem;
 }
-.contain{
-    width: 82% !important;
-    align-self: flex-end !important;
-}
+
 .row{
     margin-right: 0px !important;
 }
@@ -120,8 +119,10 @@
 .review{
     margin: 20px;
     height: 275px;
-    overflow: scroll;
+    
 }
+.review-overflow{overflow: scroll;}
+
 .cont{
     background-color: #ACC6D4;
     padding: 25px;
