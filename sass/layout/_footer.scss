@@ -1,21 +1,23 @@
-.footer{
-    background-color: #121921;
+.footer {
+    background-color: $forth-color;
     padding: 60px 35px 60px 35px;
 
     &__heading {
-        color: #ffffff;
+        color: $secondry-color;
         margin-bottom: 25px;
         font-size: 1rem;
         font-weight: 500;
     }
-    &__text{
-        color: #ffffff;
+
+    &__text {
+        color: $primary-color;
         opacity: 0.7;
     }
-    .follow-us{
+
+    .follow-us {
         display: block;
         float: left;
-        
+
         // height: 20px;
         // width: 20px;
     }

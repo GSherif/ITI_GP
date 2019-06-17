@@ -1,136 +1,168 @@
-.slider-img{
+.slider-img {
     height: 24rem;
-    padding-right: 0px !important; 
+    padding-right: 0px !important;
     padding-left: 0px !important;
 }
-.Address{
+
+.Address {
     width: 737px;
     position: absolute;
     right: 320px;
     top: 102%;
-    
+
 }
-.margin{
+
+.margin {
     margin-bottom: 90px;
 }
-.span{margin:1px 3px;}
-.slider-justify{
-justify-content: center;
+
+.span {
+    margin: 1px 3px;
 }
 
-.col-1{
-    margin-top: 10px !important; 
-    padding-left: 0px !important; 
+.slider-justify {
+    justify-content: center;
+}
+
+.col-1 {
+    margin-top: 10px !important;
+    padding-left: 0px !important;
 
 }
-.col-8{
-         padding-left: 0px !important;
+
+.col-8 {
+    padding-left: 0px !important;
 }
-.card-overlay__header{
+
+.card-overlay__header {
     margin-top: 0rem !important;
     margin-bottom: 0rem !important;
 }
-.txt{
+
+.txt {
     margin-bottom: 0rem;
 }
 
-.row{
+.row {
     margin-right: 0px !important;
 }
-.facilitiesSection{
-    background-color: #072634;
-    .cards{
+
+.facilitiesSection {
+    background-color: $secondry-color;
+
+    .cards {
         display: flex;
         justify-content: space-evenly;
         padding: 45px;
-        .facilities{
+
+        .facilities {
             height: 230px;
             width: 200px;
-            border-color:#C9BC89;
-            background-color: #072634;
+            border-color: $primary-color;
+            background-color: $secondry-color;
             justify-content: center;
-            .innerCard{
+
+            .innerCard {
                 position: relative;
                 margin: auto;
                 border-radius: 25%;
                 height: 130px;
                 width: 130px;
-                background-color: #072634;
-                border:solid 2px #C9BC89;
+                background-color: $secondry-color;
+                border: solid 2px $primary-color;
                 transform: rotate(45deg);
-                .fa-swimming-pool{
-                    color: #C9BC89;
+
+                .fa-swimming-pool {
+                    color: $primary-color;
                     position: absolute;
                     top: 50px;
                     left: 50px;
                 }
             }
-            .fac-word{
-                color: #C9BC89;
+
+            .fac-word {
+                color: $primary-color;
             }
         }
     }
 }
-.reasons-section{
+
+.reasons-section {
     background-color: #F2F6FC;
     height: 200px;
     margin: 40px;
-    .rows{
-         margin: 35px;
-    .col-6{
-        display: flex;
-        .circle--blue{
 
-            background-color: #ACC6D4;
-        }
-        .circle--red{
+    .rows {
+        margin: 35px;
 
-            background-color: #A74141;
-        }
-        .circle--yellow{
+        .col-6 {
+            display: flex;
 
-            background-color: #705775;
-        }
-        .circle--green{
+            .circle--blue {
 
-            background-color: white;
+                background-color: $third-color;
+            }
+
+            .circle--red {
+
+                background-color: #A74141;
+            }
+
+            .circle--yellow {
+
+                background-color: #705775;
+            }
+
+            .circle--green {
+
+                background-color: white;
+            }
+
+            .circle {
+                border-radius: 100%;
+                height: 30px;
+                width: 30px;
+            }
         }
-    .circle{
-        border-radius: 100%;
-        height: 30px;
-        width: 30px;
     }
 }
-}
-}
-.places-section{
+
+.places-section {
     display: flex;
     justify-content: space-evenly;
     margin: 10px;
 }
-.fa-chevron-right{
-    color: #ACC6D4 !important;
+
+.fa-chevron-right {
+    color: $third-color !important;
 }
-.Guest--img{
+
+.Guest--img {
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
 }
-.review{
+
+.review {
     margin: 20px;
     height: 275px;
-    
-}
-.review-overflow{overflow: scroll;}
 
-.cont{
-    background-color: #ACC6D4;
+}
+
+.review-overflow {
+    overflow: scroll;
+}
+
+.cont {
+    background-color: $secondry-color;
     padding: 25px;
-.review-from{
-    width: 600px;
-    margin: auto;
+
+    .review-from {
+        width: 600px;
+        margin: auto;
+    }
 }
-}
+
 // *{
 //     margin: 0;
 //     padding: 0;
@@ -140,38 +172,47 @@ justify-content: center;
     height: 46px;
     padding: 0 10px;
 }
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
 }
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
 }
-.rate:not(:checked) > label:before {
+
+.rate:not(:checked)>label:before {
     content: '★ ';
 }
-.rate > input:checked ~ label {
-    color: #ffc700;    
+
+.rate>input:checked~label {
+    color: #ffc700;
 }
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
 }
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
     color: #c59b08;
 }
-p{
+
+p {
     color: black;
 }
+
+
 
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

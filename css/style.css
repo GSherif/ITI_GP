@@ -6,8 +6,8 @@
 
 body {
   font-size: 1.6rem;
-  font-family: Lato,sans-serif;
-  color: #1c1d29 !important; }
+  font-family: sans-serif;
+  color: #b55400 !important; }
 
 a {
   text-decoration: none !important;
@@ -46,10 +46,10 @@ li {
       top: 0; }
   .card-overlay__overlay-container {
     position: relative;
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 22px; }
   .card-overlay__header {
-    color: #1c1d29;
+    color: #b55400;
     margin-top: 5rem;
     margin-bottom: 3rem;
     font-family: "Cookie", cursive;
@@ -103,7 +103,7 @@ li {
     font-size: 3rem;
     line-height: 1.333;
     font-family: "Cookie", cursive;
-    color: #1c1d29; }
+    color: #eeeeee; }
   .card-with-img-and-desc--card {
     border: transparent;
     margin-top: 3.5rem; }
@@ -124,7 +124,7 @@ li {
       opacity: 0.7; }
   .card-with-img-and-desc--overlay {
     position: absolute;
-    background: #1c1d29;
+    background: #eeeeee;
     text-align: center;
     padding: 45px 0 66px 0;
     opacity: 0;
@@ -163,7 +163,7 @@ li {
       left: 34px;
       z-index: 9; }
       .card-zoom__body .text h3 {
-        color: white;
+        color: #eeeeee;
         padding: 5px 0; }
       .card-zoom__body .text span {
         color: gray; }
@@ -211,7 +211,7 @@ li {
   margin-right: 0px !important; }
 
 .facilitiesSection {
-  background-color: #072634; }
+  background-color: #b55400; }
   .facilitiesSection .cards {
     display: flex;
     justify-content: space-evenly;
@@ -219,8 +219,8 @@ li {
     .facilitiesSection .cards .facilities {
       height: 230px;
       width: 200px;
-      border-color: #C9BC89;
-      background-color: #072634;
+      border-color: #eeeeee;
+      background-color: #b55400;
       justify-content: center; }
       .facilitiesSection .cards .facilities .innerCard {
         position: relative;
@@ -228,16 +228,16 @@ li {
         border-radius: 25%;
         height: 130px;
         width: 130px;
-        background-color: #072634;
-        border: solid 2px #C9BC89;
+        background-color: #b55400;
+        border: solid 2px #eeeeee;
         transform: rotate(45deg); }
         .facilitiesSection .cards .facilities .innerCard .fa-swimming-pool {
-          color: #C9BC89;
+          color: #eeeeee;
           position: absolute;
           top: 50px;
           left: 50px; }
       .facilitiesSection .cards .facilities .fac-word {
-        color: #C9BC89; }
+        color: #eeeeee; }
 
 .reasons-section {
   background-color: #F2F6FC;
@@ -248,7 +248,7 @@ li {
     .reasons-section .rows .col-6 {
       display: flex; }
       .reasons-section .rows .col-6 .circle--blue {
-        background-color: #ACC6D4; }
+        background-color: #393e46; }
       .reasons-section .rows .col-6 .circle--red {
         background-color: #A74141; }
       .reasons-section .rows .col-6 .circle--yellow {
@@ -266,7 +266,7 @@ li {
   margin: 10px; }
 
 .fa-chevron-right {
-  color: #ACC6D4 !important; }
+  color: #393e46 !important; }
 
 .Guest--img {
   border-radius: 50%;
@@ -281,7 +281,7 @@ li {
   overflow: scroll; }
 
 .cont {
-  background-color: #ACC6D4;
+  background-color: #b55400;
   padding: 25px; }
   .cont .review-from {
     width: 600px;
@@ -332,9 +332,6 @@ p {
     color: yellow; }
   .card .card-text span {
     color: grey; }
-  .card:hover {
-    margin-top: -0.5rem;
-    transition: all 0.3s ease-in-out 0s; }
   .card h4 {
     position: absolute;
     top: 55%;
@@ -357,7 +354,7 @@ p {
   transition: 0.3s;
   opacity: 0.7; }
   .link:hover {
-    color: red; }
+    color: #b55400; }
   .link--moved:hover {
     margin-left: 5px; }
 
@@ -369,7 +366,7 @@ p {
   height: 190px; }
 
 .tag-item {
-  background-color: #333;
+  background-color: #b55400;
   color: white;
   border-radius: 50px;
   padding: 10px 18px; }
@@ -681,7 +678,8 @@ input.input100 {
   color: #fff; }
 
 .manage-trip {
-  text-align: center; }
+  text-align: center;
+  color: #b55400 !important; }
   .manage-trip__headers-row {
     border-bottom: 0.001rem solid #b8b7b8;
     margin-bottom: 1.9rem; }
@@ -690,8 +688,8 @@ input.input100 {
   .manage-trip__btn-day {
     display: block !important;
     color: #fff !important;
-    background-color: #515691 !important;
-    border-color: #515691 !important;
+    background-color: #b55400 !important;
+    border-color: #b55400 !important;
     margin-top: 0.5rem;
     margin-left: 4.6rem; }
   .manage-trip__details-section {
@@ -701,22 +699,22 @@ input.input100 {
   .manage-trip__dropdown-text {
     margin-top: 0.4rem;
     font-family: "lato", sans-serif;
-    color: #F4EEF5;
+    color: #b55400;
     margin-left: 0.4rem;
     margin-bottom: 1.4rem; }
   .manage-trip__btn-dropdwon {
     outline: none;
     background: white !important;
-    color: grey; }
+    color: #b55400; }
   .manage-trip--text {
-    color: #ECDBDB;
-    font-family: "lato", sans-serif; }
+    color: #b55400;
+    font-family: sans-serif; }
   .manage-trip--icons {
-    color: #ECDBDB; }
+    color: #b55400; }
   .manage-trip__text-header {
-    color: #F4EEF5;
+    color: #b55400;
     font-family: "Cookie", cursive;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600; }
   .manage-trip__order-day-section {
     border-left: 0.001rem solid #b8b7b8; }
@@ -762,9 +760,9 @@ input.input100 {
     padding: 0.8rem;
     background-color: #F7F7F7;
     margin-right: 1px;
-    color: #1c1d29; }
+    color: #eeeeee; }
     .tabs__header.active {
-      border-top-color: #1c1d29;
+      border-top-color: #eeeeee;
       background-color: white;
       border-bottom-width: 0; }
   .tabs__bodies {
@@ -774,16 +772,62 @@ input.input100 {
   .tabs__body:not(.active) {
     display: none; }
 
+h1 {
+  font-size: 12px; }
+
+h2 {
+  font-size: 22px;
+  font-weight: bold; }
+
+h3 {
+  font-size: 20px;
+  font-weight: bold; }
+
+h4 {
+  font-size: 18px;
+  font-weight: bold; }
+
+h5 {
+  font-size: 12px; }
+
+h6 {
+  font-size: 12px; }
+
+p {
+  font-size: 14px; }
+
+img {
+  width: 100%; }
+
+.search-card {
+  background-color: #393e46;
+  border: 1px;
+  border-color: #393e46; }
+
+.btn-primary {
+  color: #eeeeee !important;
+  background-color: #b55400 !important;
+  border-color: #b55400 !important; }
+
+.card h4 {
+  position: relative;
+  top: 55% !important;
+  left: 5% !important;
+  color: #b55400 !important; }
+
+.nav-link.active {
+  background-color: #b55400 !important; }
+
 .footer {
-  background-color: #121921;
+  background-color: #222831;
   padding: 60px 35px 60px 35px; }
   .footer__heading {
-    color: #ffffff;
+    color: #b55400;
     margin-bottom: 25px;
     font-size: 1rem;
     font-weight: 500; }
   .footer__text {
-    color: #ffffff;
+    color: #eeeeee;
     opacity: 0.7; }
   .footer .follow-us {
     display: block;
